@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (event.target.classList.contains("delete-btn")) {
       item.remove();
-    } else if (event.target.tagName === "SPAN") {
-      item.classList.toggle("completed");
+    } else {
+  item.classList.toggle("completed");
     }
 
     applyFilter();
